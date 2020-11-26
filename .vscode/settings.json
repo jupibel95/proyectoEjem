@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\alexg\\.virtualenvs\\clonproyecto-RafNuFad\\Scripts\\python.exe"
 }
