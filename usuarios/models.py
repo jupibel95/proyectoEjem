@@ -22,4 +22,13 @@ class Ubicacion(models.Model):
     centro_asistencial = models.ForeignKey(Centro_asistencial, on_delete=models.PROTECT)
 
     def __str__(self) -> str:
-        return str(self.direccion)
+        return str(self.direccion) + "-" + self.nombre
+
+
+
+# Create your models here.
+class Paciente(models.Model):
+    nombre = models.CharField(max_length=64)
+    documento = models.CharField(max_length=20)
+    direccion = models.CharField(max_length=64)
+    correo = models.CharField(max_length=64)
